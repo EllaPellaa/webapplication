@@ -61,7 +61,7 @@ function filterFlowers() {
 
     text += "</tbody>"
 
-    document.getElementById("filteredTable").innerHTML += text;
+    document.getElementById("filteredtable").innerHTML += text;
 } 
 
 function checkMonth(month) {
