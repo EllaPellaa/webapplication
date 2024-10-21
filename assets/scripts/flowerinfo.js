@@ -34,9 +34,7 @@ flowerinfotable.innerHTML += text;
 
 //Form data handling
 
-document.getElementById("selectmonthform").addEventListener("submit", function (e) {
-    e.preventDefault();
-    
+function filterFlowers() {
     //Handle submit
     var formData = document.getElementById("selectedmonth").value;
 
@@ -60,8 +58,7 @@ document.getElementById("selectmonthform").addEventListener("submit", function (
     text += "</tbody>"
 
     document.getElementById("filteredTable").innerHTML += text;
-
-});
+} 
 
 function checkMonth(month) {
     return formData === month;
