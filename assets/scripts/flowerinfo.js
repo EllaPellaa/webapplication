@@ -78,8 +78,7 @@ function checkMonth(flower) {
     for (let i = 0; i < flower.blooms.length; i++) {
         if(flower.blooms[i] === formData) {
             return true;
-        } else {
-            return false;
         }
     }
+    return false;
 }
