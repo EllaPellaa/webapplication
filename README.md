@@ -25,4 +25,13 @@ In stylesheet.css, from line `44` onwards, there are several classes and IDs use
 Flexboxes are used on several pages to get responsive design. All pages have the viewport meta to get responsive design (for example, `index.html` line `6`). In addition, `stylesheet.css` has many @media queries from line `170` onwards. Moreover, the navigation bar turns into a dropdown menu on smaller devices, which makes it easier for mobile users to navigate the page. The styles for this can be seen in `stylesheet.css` on lines `83-108`, and responsive design on `188-205`. The clicking of the navigation bar is done in `navbar.js` (assets/scripts/navbar.js).
 
 **4/5 Use of layouts for advanced user interfaces (arrays, float, flexbox, css grid)**
-The navigation bar is done with a flexbox. The location of the code is in `stylesheet.css` on lines `83-108`, and responsive design on `188-205`. The clicking of the navigation bar is done in `navbar.js` (assets/scripts/navbar.js). Another flexbox can be found in `index.html` (the images). The styling can be found in `stylesheet.css` on lines `137-172`.
+The navigation bar is done with a flexbox. The location of the code is in `stylesheet.css` on lines `83-108`, and responsive design on `188-205`. The clicking of the navigation bar is done in `navbar.js` (assets/scripts/navbar.js). Another flexbox can be found in `index.html` (the images). The styling can be found in `stylesheet.css` on lines `137-172`. Additionally, the footer is made with flexbox. The footer's styling can be found in `stylesheet.css` on lines `28-54`.
+
+**5/5 Styling demonstrates a strong grasp of layout principles, aesthetics, and user experience.**
+- The fonts and the background are very differently colored, so that the user can easily read the text. The navigation bars and content boxes are made lighter for this reason as well. 
+- The font gets slightly smaller when the browser window is small, so that the text can fit the window better. 
+- The navigation bar and the footer are put on the top and the bottom of the page respectively. 
+- The navigation bar collapses when the window is made smaller. 
+- The pictures in the `index.html` page slightly zoom when mouse hovers over them. 
+- Navigation bar buttons change color when hovered on, so that the user can distinguish which page they are hovering the mouse over. 
+- The navigation bar also makes the current page darker on the navigation bar.
