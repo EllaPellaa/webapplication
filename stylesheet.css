@@ -120,19 +120,36 @@ footer p {
 
 /* Table styles */
 #flowerinfo {
+    background-color: #dddddd;
     border-collapse: collapse;
     width: 100%;
 }
 
 #flowerinfo td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid #aaaaaa;
     text-align: left;
     padding: 8px;
 }
 
 #flowerinfo tr:nth-child(even) {
+    background-color: #aaaaaa;
+}
+
+#filteredtable {
     background-color: #dddddd;
-  }
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#filteredtable td, th {
+    border: 1px solid #aaaaaa;
+    text-align: left;
+    padding: 8px;
+}
+
+#filteredtable tr:nth-child(even) {
+    background-color: #aaaaaa;
+}
 
 /* Boxes for the flexbox images */
 .imagecontainer {
@@ -169,6 +186,21 @@ footer p {
 
 .imagebox .imagezoombox img:hover {
     transform: scale(1.3);
+}
+
+/* Forms */
+#selectmonthform select {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+#selectmonthform input {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
 }
 
 /* Responsivity etc */

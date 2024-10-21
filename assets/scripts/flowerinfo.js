@@ -31,3 +31,38 @@ for (let i = 0; i < flowers.length; i++) {
 text += "</tbody>"
 
 flowerinfotable.innerHTML += text;
+
+//Form data handling
+
+document.getElementById("selectmonthform").addEventListener("submit", function (e) {
+    e.preventDefault();
+    
+    //Handle submit
+    var formData = document.getElementById("selectedmonth").value;
+
+    let filteredFlowers = flowers.filter(checkMonth);
+
+    text += "<tbody>";
+
+    for (let i = 0; i < filteredFlowers.length; i++) {
+        let bloomsin = "";
+        for (let j = 0; j < filteredFlowers[i].blooms.length; j++) {
+            bloomsin += filteredFlowers[i].blooms[j];
+            if(j !== (filteredFlowers[i].blooms.length - 1)) {
+                bloomsin += ", ";
+            }
+        }
+        text += `<tr>
+        <td>` + filteredFlowers[i].name + `</td>
+        <td>` + bloomsin + `</td></tr>`;
+    }
+
+    text += "</tbody>"
+
+    document.getElementById("filteredTable").innerHTML += text;
+
+});
+
+function checkMonth(month) {
+    return formData === month;
+}
