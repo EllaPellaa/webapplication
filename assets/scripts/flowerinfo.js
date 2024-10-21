@@ -34,11 +34,14 @@ flowerinfotable.innerHTML += text;
 
 //Form data handling
 
+document.querySelector('#submitbtn').addEventListener('click', filterFlowers)
+
 function filterFlowers() {
     //Handle submit
     var formData = document.getElementById("selectedmonth").value;
 
     let filteredFlowers = flowers.filter(checkMonth);
+    filteredFlowers.sort();
 
     text += "<tbody>";
 
