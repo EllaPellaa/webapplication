@@ -11,13 +11,15 @@ flowers.push(new Flower("rose", "rose.jpg", ["may", "june", "july", "august", "s
 
 let flowerinfotable = document.getElementById("flowerinfo");
 
+flowerinfotable.innerHTML += "<tbody>";
+
 for (let i = 0; i < flowers.length; i++) {
     flowerinfotable.innerHTML += `<tr>
     <td>` + flowers[i].name + `</td>
     <td>`;
 
     for (let j = 0; j < flowers[i].blooms.length; j++) {
-        flowerinfotable.innerHTML += flowers[i].blooms[j]
+        flowerinfotable.innerHTML += flowers[i].blooms[j];
         if(j !== (flowers[i].blooms.length - 1)) {
             flowerinfotable.innerHTML += ", ";
         }
@@ -25,3 +27,5 @@ for (let i = 0; i < flowers.length; i++) {
 
     flowerinfotable.innerHTML += "</td></tr>";
 }
+
+flowerinfotable.innerHTML += "</tbody>";

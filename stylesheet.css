@@ -35,6 +35,11 @@ footer {
     align-items: center;
 }
 
+footer p {
+    font-size: 16px;
+    margin: 3px;
+}
+
 /* Some styles for grid view */
 
 .grid-view {
@@ -108,10 +113,21 @@ footer {
 	width: 80%;
 }
 
-footer p {
-    font-size: 16px;
-    margin: 3px;
+/* Table styles */
+#flowerinfo {
+    border-collapse: collapse;
+    width: 100%;
 }
+
+#flowerinfo td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#flowerinfo tr:nth-child(even) {
+    background-color: #dddddd;
+  }
 
 /* Boxes for the flexbox images */
 .imagecontainer {
