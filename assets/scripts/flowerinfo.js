@@ -44,7 +44,7 @@ function filterFlowers() {
     let filteredFlowers = flowers.filter(checkMonth);
     filteredFlowers.sort();
 
-    text += `<thead>
+    text = `<thead>
                 <tr>
                     <th>Name</th>
                     <th>Blooms in</th>
@@ -75,13 +75,10 @@ function filterFlowers() {
 } 
 
 function checkMonth(flower) {
-    console.log(flower);
     for (let i = 0; i < flower.blooms.length; i++) {
         if(flower.blooms[i] === formData) {
-            console.log(flower.blooms[i]);
             return true;
         } else {
-            console.log("N" + flower.blooms[i]);
             return false;
         }
     }
