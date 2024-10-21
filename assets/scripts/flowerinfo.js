@@ -5,6 +5,7 @@ let flowers = [];
 flowers.push(new flower("cosmos", "cosmos.jpg", ["june", "july"]));
 flowers.push(new flower("dandelion", "dandelion.jpg", ["may", "june", "july"]));
 flowers.push(new flower("forget-me-not", "forget-me-not.jpg", ["april", "may"]));
+flowers.push(new flower("hydrangea", "hydrangea.jpg", ["may", "june", "july"]));
 
 console.log(flowers[0]);
 
