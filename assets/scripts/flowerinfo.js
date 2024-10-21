@@ -14,18 +14,16 @@ let flowerinfotable = document.getElementById("flowerinfo");
 flowerinfotable.innerHTML += "<tbody>";
 
 for (let i = 0; i < flowers.length; i++) {
-    flowerinfotable.innerHTML += `<tr>
-    <td>` + flowers[i].name + `</td>
-    <td>`;
-
+    let bloomsin = "";
     for (let j = 0; j < flowers[i].blooms.length; j++) {
-        flowerinfotable.innerHTML += flowers[i].blooms[j];
+        bloomsin += flowers[i].blooms[j];
         if(j !== (flowers[i].blooms.length - 1)) {
-            flowerinfotable.innerHTML += ", ";
+            bloomsin += ", ";
         }
     }
-
-    flowerinfotable.innerHTML += "</td></tr>";
+    flowerinfotable.innerHTML += `<tr>
+    <td>` + flowers[i].name + `</td>
+    <td>` + bloomsin + `</td></tr>`;
 }
 
 flowerinfotable.innerHTML += "</tbody>";
