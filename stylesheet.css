@@ -130,7 +130,7 @@ footer p {
     padding: 8px;
 }
 
-#flowerinfo tr:nth-child(even) {
+#flowerinfo tbody tr:nth-child(even) {
     background-color: #dddddd;
   }
 

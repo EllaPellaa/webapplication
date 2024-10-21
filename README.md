@@ -35,3 +35,20 @@ The navigation bar is done with a flexbox. The location of the code is in `style
 - The pictures in the `index.html` page slightly zoom when mouse hovers over them. 
 - Navigation bar buttons change color when hovered on, so that the user can distinguish which page they are hovering the mouse over. 
 - The navigation bar also makes the current page darker on the navigation bar.
+- There is a menu icon on the navigation bar when the browser window is small. The icon is from fontawesome icons.
+
+##JavaScript Basics
+**1/5 Simple interactions (like alerts on button click)**
+The first link in the navigation bar is a button, which collapses and opens the navigation bar when the browser window is small. The function for the button is in `navbar.js` (the function name is navchange).
+
+**2/5 Multiple event listeners and basic DOM manipulations**
+The first link in the navigation bar uses onclick-event. When clicked, it triggers the navchange function in `navbar.js`. In addition, in `flowerinfo.js` the script uses document.getElementById to bring the information from an array of javascript class objects to a table on the page. Code for this is on lines `12-29`.
+
+**3/5 Use of arrays, objects, and functions.**
+There is an array of objects made from the `flower`-class in `flowerinfo.js`. The creation of the array is on line `3`, and adding items to it is on lines `5-10`. Looping through the array of objects and bringing the information on the web page is on lines `16-29`. The flower class constructor etc. can be found in `flowerclass.js`.
+
+**4/5 Advanced logic, looping through data, and dynamic DOM updates.**
+Looping through data can be found on `flowerinfo.js` on lines `16-27`. The loop goes through an array of flower class objects, and brings the data to a table on the `flowerinfo.html`-page.
+
+**5/5 Consistent use of Object-Oriented JavaScript principles**
+There is a Flower-class, which is used to make flower objects that are displayed on the `flowerinfo.html`-page. The class creation, constructor etc. can be found from `flowerclass.js`-file and creating the objects from the class is in `flowerinfo.js` on lines `5-10`.
