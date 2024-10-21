@@ -11,7 +11,9 @@ flowers.push(new Flower("rose", "rose.jpg", ["may", "june", "july", "august", "s
 
 let flowerinfotable = document.getElementById("flowerinfo");
 
-flowerinfotable.innerHTML += "<tbody>";
+let text = "";
+
+text += "<tbody>";
 
 for (let i = 0; i < flowers.length; i++) {
     let bloomsin = "";
@@ -21,9 +23,11 @@ for (let i = 0; i < flowers.length; i++) {
             bloomsin += ", ";
         }
     }
-    flowerinfotable.innerHTML += `<tr>
+    text += `<tr>
     <td>` + flowers[i].name + `</td>
     <td>` + bloomsin + `</td></tr>`;
 }
 
-flowerinfotable.innerHTML += "</tbody>";
+text += "</tbody>"
+
+flowerinfotable.innerHTML += text;

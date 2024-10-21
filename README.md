@@ -1,4 +1,4 @@
-##HTML
+## HTML
 **1/5 Basic HTML structure is present**
 All pages have the needed tags (`html`, `head`, `body` etc.) present. There are also images on the `index.html`-page. Other things are listed below.
 
@@ -14,7 +14,7 @@ The table is in the `flowerinfo.html`-file on lines `27-34`. The rest of the tab
 **5/5 Consistent use of semantic HTML throughout, ensuring better structure and understanding of the content.**
 index.html, `flowerinfo.html`, and `catfacts.html`-files all have `nav`, `header` and `footer` present. There's also a `section` in `flowerinfo.html` on row `26-35`.
 
-##CSS
+## CSS
 **1/5 Basic CSS styling (colors, fonts)**
 Text font and color are same throughout the pages. They are defined in `stylesheet.css` on lines `7-8`.
 
@@ -37,7 +37,7 @@ The navigation bar is done with a flexbox. The location of the code is in `style
 - The navigation bar also makes the current page darker on the navigation bar.
 - There is a menu icon on the navigation bar when the browser window is small. The icon is from fontawesome icons.
 
-##JavaScript Basics
+## JavaScript Basics
 **1/5 Simple interactions (like alerts on button click)**
 The first link in the navigation bar is a button, which collapses and opens the navigation bar when the browser window is small. The function for the button is in `navbar.js` (the function name is navchange).
 
@@ -52,3 +52,5 @@ Looping through data can be found on `flowerinfo.js` on lines `16-27`. The loop 
 
 **5/5 Consistent use of Object-Oriented JavaScript principles**
 There is a Flower-class, which is used to make flower objects that are displayed on the `flowerinfo.html`-page. The class creation, constructor etc. can be found from `flowerclass.js`-file and creating the objects from the class is in `flowerinfo.js` on lines `5-10`.
+
+## Asynchronous Operations
