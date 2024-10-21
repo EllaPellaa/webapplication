@@ -74,6 +74,13 @@ function filterFlowers() {
     document.getElementById("filteredtable").innerHTML = text;
 } 
 
-function checkMonth(month) {
-    return formData === month;
+function checkMonth(flower) {
+    console.log(flower);
+    for (let i = 0; i < flower.blooms.length; i++) {
+        if(flower.blooms[i] === formData) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
