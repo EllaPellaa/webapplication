@@ -35,7 +35,7 @@ flowerinfotable.innerHTML += text;
 
 //Form data handling
 
-document.querySelector('#submitbtn').addEventListener('click', filterFlowers)
+document.querySelector('#submitbtn').addEventListener('click', filterFlowers);
 
 function filterFlowers() {
     //Handle submit

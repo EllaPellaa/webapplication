@@ -12,6 +12,7 @@ async function getCatFacts() {
 
     for (let i = 0; i < data.data.length; i++) {
       document.getElementById("catfacts").innerHTML += "<li>" + data.data[i].fact + "</li>";
+      let timeout = setTimeout(playvid, 3000);
     }
 
     return data;
@@ -22,3 +23,7 @@ async function getCatFacts() {
 }
 
 getCatFacts();
+
+function playvid() {
+  document.getElementById("catvideo").play();
+}
