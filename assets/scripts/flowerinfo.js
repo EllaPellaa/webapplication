@@ -12,6 +12,7 @@ flowers.push(new Flower("rose", "rose.jpg", ["may", "june", "july", "august", "s
 let flowerinfotable = document.getElementById("flowerinfo");
 
 let text = "";
+var formData;
 
 text += "<tbody>";
 
@@ -38,7 +39,7 @@ document.querySelector('#submitbtn').addEventListener('click', filterFlowers)
 
 function filterFlowers() {
     //Handle submit
-    var formData = document.getElementById("selectedmonth").value;
+    formData = document.getElementById("selectedmonth").value;
 
     let filteredFlowers = flowers.filter(checkMonth);
     filteredFlowers.sort();
