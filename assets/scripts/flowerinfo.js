@@ -65,6 +65,10 @@ function filterFlowers() {
         <td>` + bloomsin + `</td></tr>`;
     }
 
+    if(filteredFlowers.length === 0) {
+        text += "<p>No flowers in table bloom in the selected month.</p>"
+    }
+
     text += "</tbody>"
 
     document.getElementById("filteredtable").innerHTML = text;
