@@ -1,4 +1,4 @@
-class flower {
+class Flower {
     constructor(name, photo, blooms = []) {
         this.name = name;
         this.photo = photo;
@@ -6,4 +6,4 @@ class flower {
     }
 }
 
-export default flower;
+export default Flower;

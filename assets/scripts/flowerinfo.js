@@ -1,4 +1,4 @@
-import {flower} from "./flowerclass.js";
+import {Flower} from "./flowerclass.js";
 
 let flowers = [];
 
