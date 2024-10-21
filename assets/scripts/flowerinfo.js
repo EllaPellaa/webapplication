@@ -44,7 +44,13 @@ function filterFlowers() {
     let filteredFlowers = flowers.filter(checkMonth);
     filteredFlowers.sort();
 
-    text += "<tbody>";
+    text += `<thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Blooms in</th>
+                </tr>
+            </thead>
+            <tbody>`;
 
     for (let i = 0; i < filteredFlowers.length; i++) {
         let bloomsin = "";
@@ -61,7 +67,7 @@ function filterFlowers() {
 
     text += "</tbody>"
 
-    document.getElementById("filteredtable").innerHTML += text;
+    document.getElementById("filteredtable").innerHTML = text;
 } 
 
 function checkMonth(month) {
