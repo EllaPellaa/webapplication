@@ -1,10 +1,12 @@
-import {flower} from "./flowerclass";
+import {flower} from "./flowerclass.js";
 
 let flowers = [];
 
 flowers.push(new flower("cosmos", "cosmos.jpg", ["june", "july"]));
+flowers.push(new flower("dandelion", "dandelion.jpg", ["may", "june", "july"]));
+flowers.push(new flower("forget-me-not", "forget-me-not.jpg", ["april", "may"]));
 
-console.log(flowers[1]);
+console.log(flowers[0]);
 
 let flowerinfo = 
 {
