@@ -24,6 +24,17 @@ img {
     height: auto;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    align-items: center;
+}
+
 /* Some styles for grid view */
 
 .grid-view {
@@ -50,6 +61,14 @@ img {
 .col-12 {width: 100%;}
 
 /* Styles for most pages */
+
+.hidden {
+    display: none;
+}
+
+.icon {
+    display: none;
+}
 
 .mainheader {
     margin: 5px;
@@ -87,6 +106,11 @@ img {
 	padding-bottom: 30px;
 	background-color: rgba(255, 255, 255, 0.5);
 	width: 80%;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 3px;
 }
 
 /* Boxes for the flexbox images */
@@ -127,7 +151,7 @@ img {
 }
 
 /* Responsivity etc */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 	p {
 		font-size: 16px;
 	}
@@ -142,6 +166,21 @@ img {
 
     .navigation {
         flex-direction: column;
+    }
+
+    .navigation a {display: none;}
+
+    .topnav a.icon {
+        display: block;
+    }
+
+    .navigation.responsive a {
+        display: block;
+        text-align: left;
+    }
+
+    .navigation a.icon {
+        display: block;
     }
 }
 
