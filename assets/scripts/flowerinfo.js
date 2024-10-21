@@ -9,7 +9,7 @@ flowers.push(new Flower("hydrangea", "hydrangea.jpg", ["may", "june", "july"]));
 flowers.push(new Flower("lily of the valley", "lilyofthevalley.jpg", ["may"]));
 flowers.push(new Flower("rose", "rose.jpg", ["may", "june", "july", "august", "september", "october"]));
 
-flowerinfotable = document.getElementById("flowerinfo");
+let flowerinfotable = document.getElementById("flowerinfo");
 
 for (let i = 0; i < flowers.length; i++) {
     flowerinfotable.innerHTML += `<tr>
