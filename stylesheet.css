@@ -120,6 +120,7 @@ footer p {
 
 /* Table styles */
 #flowerinfo {
+    background-color: #afafaf;
     border-collapse: collapse;
     width: 100%;
 }
@@ -130,7 +131,7 @@ footer p {
     padding: 8px;
 }
 
-#flowerinfo tbody tr:nth-child(even) {
+#flowerinfo tr:nth-child(even) {
     background-color: #dddddd;
   }
 
