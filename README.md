@@ -1,22 +1,22 @@
 ##HTML
 **1/5 Basic HTML structure is present**
-All pages have the needed tags (<html> <head> <body> etc.) present. There are also images on the `index.html`-page. Other things are listed below.
+All pages have the needed tags (`html`, `head`, `body` etc.) present. There are also images on the `index.html`-page. Other things are listed below.
 
 **2/5 HTML structure with clear content differentiation (headings, paragraphs, lists).**
-All pages have a <h1> inside the <header>-section. There are also several <p> elements both outside and inside the same element.
+All pages have a `h1` inside the `header`-section. There are also several `p` elements both outside and inside the same element.
 
 **3/5 Use of forms, links and media**
 There are links in the navigation bar. These are links leading to different html-pages in the repository.
 
 **4/5 Tables are effectively used**
-The table is in the `flowerinfo.html`-file on lines `27-34`. The rest of the table is generated in the `flowerinfo.js`-file (in assets/scripts folder) on lines 14-29.
+The table is in the `flowerinfo.html`-file on lines `27-34`. The rest of the table is generated in the `flowerinfo.js`-file (in assets/scripts folder) on lines `14-29`.
 
 **5/5 Consistent use of semantic HTML throughout, ensuring better structure and understanding of the content.**
-index.html, flowerinfo.html, and catfacts.html-files all have <nav>, <header> and <footer> present. There's also a <section> in flowerinfo.html on row 26-35.
+index.html, `flowerinfo.html`, and `catfacts.html`-files all have `nav`, `header` and `footer` present. There's also a `section` in `flowerinfo.html` on row `26-35`.
 
 ##CSS
 **1/5 Basic CSS styling (colors, fonts)**
-Text font and color are same throughout the pages. They are defined in stylesheet.css on lines 7-8.
+Text font and color are same throughout the pages. They are defined in `stylesheet.css` on lines `7-8`.
 
 **2/5 Use of classes and IDs to style specific elements.**
 In stylesheet.css, from line `44` onwards, there are several classes and IDs used to style elements. The classes are easy to find, some of the IDs can be found on lines 118-131.
