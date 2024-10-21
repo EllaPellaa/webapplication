@@ -5,6 +5,7 @@ body {
 	background-attachment: fixed;
     margin: 0;
     font-family: 'Courier New', monospace;
+    color: black;
 }
 
 h1 {
@@ -79,6 +80,8 @@ footer p {
     margin: 5px;
 }
 
+/* Navigation bar */
+
 .navigation {
     background-color: rgba(255, 255, 255, 0.7);
 	width: 100%;
@@ -103,6 +106,8 @@ footer p {
 .navlinkchosen {
     background-color:  rgba(204, 204, 204, 0.7);
 }
+
+/* The basic style for content box on most pages */
 
 .content {
     margin: auto;
